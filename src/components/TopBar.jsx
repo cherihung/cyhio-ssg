@@ -8,7 +8,7 @@ export default function TopBar() {
   return (
     <div className="topBar">
       <div className="logoGroup">
-        <div className="logoSite"><strong>cyh.io</strong></div>
+        <div className="siteMark"><strong>cyh.io</strong></div>
         <a href="https://github.com/cherihung" target="_blank" rel="noopener noreferrer" title="Github">
           <GithubLogo width="24" />
         </a>

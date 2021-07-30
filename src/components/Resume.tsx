@@ -20,7 +20,7 @@ export default function Resume() {
 );
 
   return (
-    <div>
+    <div className="resume">
       <div className="section">
         <h4>Skills</h4>
         <p>Javascript/Typescript, React, NodeJS, GraphQL, Kafka, AWS, Jenkins, Docker, Cassandra, SQL, ElasticSearch, Angular, AngularJS, CSS-in-JS, CSS3, SASS, Selenium, WebdriverIO</p>
