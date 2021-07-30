@@ -1,0 +1,147 @@
+@import './theme';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.base-wrapper {
+  font-size: 14px;
+  /* background-color: ${({ theme }) => theme.backgroundColor };
+  color: ${({theme}) => theme.color}; */
+  min-height: 100vh;
+  padding-top: 1em
+}
+
+.base-wrapper-inner {
+  margin: 0 auto;
+  width: 90vw;
+  min-width: 200px;
+  padding: 0.5em 0;
+  @media (min-width:600px) {
+    padding: 1em;
+    max-width: 800px;
+    width: 80vw;
+  }
+}
+
+/** component styles **/
+.about {
+  @media (min-width:600px) {
+     padding-bottom: 1em;
+   }
+   h1 {
+    font-weight: 300;
+    span {
+       font-weight: 500;
+    }
+  } 
+}
+
+.resume {
+  .section {
+    h3 {
+      /* color: theme.emphasisTextColor, */
+      margin-bottom: 0;
+      color: red;
+    }
+    h4 {
+      /* color: theme.emphasisLabelColor, */
+      text-transform: uppercase;
+      color: red;
+    }
+    p {
+      white-space: pre-line;
+      margin-top: 0.5em;
+    }
+    span {
+      font-size: 0.9em
+      /* color: theme.lightTextColor */
+    }
+  }
+}
+
+.topBar {
+  background-color: #bfbdac;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25em 0;
+
+  .siteMark {
+    padding-right: 0.5rem;
+  }
+
+  .logoGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10em;
+    line-height: 0;
+    margin-left: 0.5em;
+  }
+
+}
+
+.footer {
+  .bottomBadge {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    // background: theme.color,
+    border-radius: '0.2em 0.2em 0 0';
+    font-Size: 10px;
+    a {
+      // color: theme.backgroundColor,
+      text-decoration: 'none';
+      opacity: 0.6;
+      padding: '0 1em';
+      display: 'block';
+      line-height: '2.5em';
+    };
+    a:hover {
+      opacity: 1
+    }
+  }
+}
+
+// export const StyledTopBar = styled.div`
+//   background-color: #bfbdac;
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+//   padding: 0.25em 0;
+//   .radioGroup {
+//     .MuiRadio-root  {
+//       color: ${props => props.theme.backgroundColor};
+//       padding: 0.1em;
+//     }
+//     .Mui-checked {
+//       color: ${props => props.theme.backgroundColor};
+//     }
+//   }
+// `
+
+// export const StyledLabel = styled.label`
+//   display: none;
+//   @media (min-width: 600px) {
+//     display: inline;
+//     text-transform: uppercase;
+//     font-size: 0.75em;
+//     color: #272820
+//   }
+// `
