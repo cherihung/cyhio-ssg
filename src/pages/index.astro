@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import About from '../components/About.astro';
+import Resume from '../components/Resume.tsx';
+import TopBar from '../components/TopBar.tsx';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<BaseLayout>
+  <div class="app">
+    <div class="header">
+      <TopBar />
+    </div>
+    <div class="main">
+      <About />
+      <Resume />
+    </div>
+    <div class="footer">
+      <div class="bottomBadge">
+        <a href="https://github.com/cherihung/cyhio" target="_blank" rel="noopener noreferrer" title="This site's source code">
+          SOURCE CODE
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
