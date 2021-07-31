@@ -25,10 +25,8 @@ code {
 
 .base-wrapper {
   font-size: 0.9rem;
-  /* background-color: ${({ theme }) => theme.backgroundColor };
-  color: ${({theme}) => theme.color}; */
-  background: #272821;
-  color: #ddccba;
+  background: $monokai-backgroundColor;
+  color: $monokai-color;
   min-height: 100vh;
   padding-top: 1em;
   line-height: 1.55;
@@ -62,24 +60,19 @@ code {
 .resume {
   .section {
     margin-bottom: 3em;
-    // > div {
-    //   border-bottom: 1px dashed ${theme.dividerColor},
-    // },
 
     > div {
-      border-bottom: 1px dashed #b2a495;
+      border-bottom: 1px dashed $monokai-dividerColor;
       padding: 1em 0;
     }
 
     h3 {
-      /* color: theme.emphasisTextColor, */
       margin-bottom: 0;
-      color: #9CD32E;
+      color: $monokai-emphasisTextColor;
     }
     h4 {
-      /* color: theme.emphasisLabelColor, */
       text-transform: uppercase;
-      color: #EF296E;
+      color: $monokai-emphasisLabelColor;
     }
     p {
       white-space: pre-line;
@@ -87,8 +80,7 @@ code {
     }
     span {
       font-size: 0.9em;
-      color: #b2a495;
-      /* color: theme.lightTextColor */
+      color: $monokai-lightTextColor;
     }
   }
 }
@@ -121,16 +113,6 @@ code {
     }
   }
 
-  // .choiceGroup {
-  //   .MuiRadio-root  {
-  //     color: ${props => props.theme.backgroundColor};
-  //     padding: 0.1em;
-  //   }
-  //   .Mui-checked {
-  //     color: ${props => props.theme.backgroundColor};
-  //   }
-  // }
-
 }
 
 .footer {
@@ -138,13 +120,11 @@ code {
     position: fixed;
     bottom: 0;
     right: 10px;
-    // background: theme.color,
-    background-color: #ddccba;
+    background-color: $monokai-color;
     border-radius: 0.2em 0.2em 0 0;
     font-Size: 10px;
     a {
-      // color: theme.backgroundColor,
-      color: #272821;
+      color:$monokai-backgroundColor;
       text-decoration: none;
       opacity: 0.6;
       padding: 0 1em;
