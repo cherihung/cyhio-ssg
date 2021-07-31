@@ -13,11 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -86,7 +81,7 @@ code {
 }
 
 .topBar {
-  background-color: #bfbdac;
+  background-color: $monokai-backgroundColor;
   display: flex;
   justify-content: space-between;
   width: 100%;
