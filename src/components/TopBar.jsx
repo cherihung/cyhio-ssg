@@ -2,6 +2,7 @@ import GithubLogo from '../images/github.svg';
 import LinkedInLogo from '../images/linkedin.svg';
 import MediumLogo from '../images/medium.svg';
 import TwitterLogo from '../images/twitter.svg';
+import ThemeToggle from './ThemeToggle';
 
 export default function TopBar() {
 
@@ -21,6 +22,9 @@ export default function TopBar() {
         <a href="https://medium.com/@cyhung" target="_blank" rel="noopener noreferrer" title="Medium">
           <MediumLogo width="24" />
         </a>
+      </div>
+      <div className="choiceGroup">
+        <ThemeToggle />
       </div>
     </div>
   )

@@ -1,13 +1,16 @@
 {
-  "name": "@example/starter",
-  "version": "0.0.1",
+  "name": "cyhio",
+  "author": "Chienyi Cheri Hung (http://www.cyh.io)",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "serve-prod": "npx serve -s dist"
   },
   "devDependencies": {
     "astro": "^0.18.5",
+    "serve": "^12.0.0",
     "snowpack-plugin-svgr": "^0.1.2"
   }
 }

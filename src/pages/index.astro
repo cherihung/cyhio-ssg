@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import About from '../components/About.astro';
+import BottomBadge from '../components/BottomBadge.astro';
 import Resume from '../components/Resume.tsx';
 import TopBar from '../components/TopBar.tsx';
 
@@ -11,7 +12,7 @@ import TopBar from '../components/TopBar.tsx';
 <BaseLayout>
   <div class="app">
     <div class="header">
-      <TopBar />
+      <TopBar client:load />
     </div>
     <div class="base-wrapper">
       <div class="base-wrapper-inner">
@@ -20,11 +21,7 @@ import TopBar from '../components/TopBar.tsx';
       </div>
     </div>
     <div class="footer">
-      <div class="bottomBadge">
-        <a href="https://github.com/cherihung/cyhio" target="_blank" rel="noopener noreferrer" title="This site's source code">
-          SOURCE CODE
-        </a>
-      </div>
+      <BottomBadge />
     </div>
   </div>
 </BaseLayout>
