@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const ThemeMap = {
   monokai: {
@@ -19,15 +19,21 @@ const ThemeMap = {
   },
 };
 
-export const ThemeChoiceKeys = Object.keys(ThemeMap);
-export const DarkThemes = (({monokai, dark}) => ({monokai, dark}))(ThemeMap);
-export const LightThemes = (({solarizedLight, bright}) => ({solarizedLight, bright}))(ThemeMap);
-export const DEFAULT_THEME = ThemeMap.monokai;
+const ThemeChoiceKeys = Object.keys(ThemeMap);
+const DEFAULT_THEME = ThemeMap.monokai;
+// const DarkThemes = (({monokai, dark}) => ({monokai, dark}))(ThemeMap);
+// const LightThemes = (({solarizedLight, bright}) => ({solarizedLight, bright}))(ThemeMap);
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(DEFAULT_THEME.name);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.add(theme);
+  }, [theme]);
+
   return ThemeChoiceKeys.map((key) => (
-    <>
+    <span key={key}>
       {theme === ThemeMap[key].name && <span>{ThemeMap[key].displayName}</span>}
       <input
         type='radio'
@@ -37,6 +43,6 @@ export default function ThemeToggle() {
         aria-label={`Use ${key} theme`}
         onChange={() => setTheme(key)}
       />
-    </>
+    </span>
   ));
 }
