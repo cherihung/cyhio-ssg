@@ -6,7 +6,7 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
-    "serve-prod": "npx serve -s dist"
+    "serve-prod": "npx serve -s build"
   },
   "devDependencies": {
     "astro": "^0.18.5",
