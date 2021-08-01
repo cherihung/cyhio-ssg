@@ -41,6 +41,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $monokai-backgroundColor,
+      inverseBackGroundColor: invert($monokai-backgroundColor),
       color: $monokai-color,
       emphasisTextColor: $monokai-emphasisTextColor,
       emphasisLabelColor: $monokai-emphasisLabelColor,
@@ -56,6 +57,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $dark-backgroundColor,
+      inverseBackGroundColor: invert($dark-backgroundColor),
       color: $dark-color,
       emphasisTextColor: $dark-emphasisTextColor,
       emphasisLabelColor: $dark-emphasisLabelColor,
@@ -71,6 +73,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $bright-backgroundColor,
+      inverseBackGroundColor: invert($bright-backgroundColor),
       color: $bright-color,
       emphasisTextColor: $bright-emphasisTextColor,
       emphasisLabelColor: $bright-emphasisLabelColor,
@@ -86,6 +89,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $solarized-backgroundColor,
+      inverseBackGroundColor: invert($solarized-backgroundColor),
       color: $solarized-color,
       emphasisTextColor: $solarized-emphasisTextColor,
       emphasisLabelColor: $solarized-emphasisLabelColor,

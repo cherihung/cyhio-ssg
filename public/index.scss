@@ -118,11 +118,12 @@ body {
   }
   .choiceGroup {
     padding: 0.25em;
+    margin-right: 0.5em;
     display: flex;
 
     .choice-inputs {
       display: flex;
-      /** input style **/
+
       input[type="radio"] {
         display: none;
       }
@@ -140,6 +141,17 @@ body {
       input[type="radio"]:checked + label {
         background-color: gray;
         color: whitesmoke;
+      }
+
+      span:first-of-type {
+        label {
+          border-radius: 0.75em 0 0 0.75em;
+        }
+      }
+      span:last-of-type {
+        label {
+          border-radius: 0 0.75em 0.75em 0;
+        }
       }
     }
   }
