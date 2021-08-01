@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {DEFAULT_THEME, ThemeChoiceKeys, themeKeys} from "../utils/constants";
+import {DEFAULT_THEME, ThemeChoiceKeys, themeKeys, ThemeMap} from "../utils/constants";
 import {getThemeName, getUserTheme, saveUserThemeKey} from "../utils/themeHelper";
 
 export default function ThemeToggle() {
@@ -29,22 +29,22 @@ export default function ThemeToggle() {
 
   return (
     <>
-      <span className={"themeName"}>{theme && getThemeName(theme)}</span>
-      {ThemeChoiceKeys.map((key) => (
-        <span key={key} className='mui-radio'>
-          <label>
+      <span className='choice-inputs'>
+        {ThemeChoiceKeys.map((key) => (
+          <span key={key}>
             <input
               type='radio'
               name='theme-choice'
+              id={`theme-choice-${key}`}
               value={key}
               title={`Use ${key} theme`}
-              checked={key === theme}
-              aria-label={`Use ${key} theme`}
+              defaultChecked={key === theme}
               onChange={() => setTheme(key)}
             />
-          </label>
-        </span>
-      ))}
+            <label htmlFor={`theme-choice-${key}`}>{ThemeMap[key].displayName}</label>
+          </span>
+        ))}
+      </span>
     </>
   );
 }

@@ -1,5 +1,6 @@
 # build output
 build
+release.sh
 
 # dependencies
 node_modules/

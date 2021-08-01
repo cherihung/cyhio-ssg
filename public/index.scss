@@ -85,7 +85,7 @@ body {
 }
 
 .topBar {
-  background-color: $monokai-color;
+  background-color: getCssVar(inverseBackGroundColor);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -93,6 +93,8 @@ body {
 
   .siteMark {
     padding-right: 0.5rem;
+    font-weight: 800;
+    color: getCssVar(backgroundColor);
   }
 
   .logoGroup {
@@ -109,17 +111,37 @@ body {
       &:hover {
         opacity: 0.7;
       }
+      svg {
+        fill: getCssVar(backgroundColor);
+      }
     }
   }
   .choiceGroup {
-    display: inline-block;
     padding: 0.25em;
-  }
-  .themeName {
-    text-transform: uppercase;
-    font-size: 0.65rem;
-    opacity: 0.5;
-    margin-right: 0.2rem;
+    display: flex;
+
+    .choice-inputs {
+      display: flex;
+      /** input style **/
+      input[type="radio"] {
+        display: none;
+      }
+
+      label {
+        display: inline-block;
+        background-color: #ddd;
+        padding: 4px 11px;
+        font-family: Arial;
+        font-size: 0.6rem;
+        cursor: pointer;
+        color: gray;
+      }
+
+      input[type="radio"]:checked + label {
+        background-color: gray;
+        color: whitesmoke;
+      }
+    }
   }
 }
 

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
-    "serve-prod": "npx serve -s build"
+    "serve-prod": "npx serve -s build",
+    "release": "yarn build && ./release.sh"
   },
   "devDependencies": {
     "@astrojs/renderer-react": "^0.2.0",
