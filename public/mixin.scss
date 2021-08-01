@@ -1,3 +1,4 @@
+// h/t to https://dev.to/felipperegazio/css-custom-properties-vars-with-sass-scss-a-practical-architecture-strategy-1m88
 // e.g. --cyh-color: value;
 @mixin createCssProps($css_props, $prefix: cyh) {
   @each $name, $value in $css_props {

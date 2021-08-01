@@ -18,7 +18,3 @@ export const saveUserThemeKey = (themeKey) => {
 export const clearUserThemeKey = () => {
   localStorage.removeItem(LOCAL_STORAGE_KEY);
 };
-
-export const getThemeName = (key: themeKeys) => {
-  return ThemeMap[key].displayName;
-};

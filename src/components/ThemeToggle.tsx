@@ -1,9 +1,9 @@
 import {useState, useEffect} from "react";
-import {DEFAULT_THEME, ThemeChoiceKeys, themeKeys, ThemeMap} from "../utils/constants";
-import {getThemeName, getUserTheme, saveUserThemeKey} from "../utils/themeHelper";
+import {DEFAULT_THEME, ThemeChoiceKeys, ThemeMap} from "../utils/constants";
+import {getUserTheme, saveUserThemeKey} from "../utils/themeHelper";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<themeKeys | undefined>();
+  const [theme, setTheme] = useState();
 
   const setRootClassName = (name) => {
     const root = document.documentElement;

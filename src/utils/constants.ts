@@ -21,7 +21,7 @@ export const ThemeMap: themeObject = {
   },
   bright: {
     name: "bright",
-    displayName: "Bright",
+    displayName: "Paper",
   },
 };
 export const ThemeChoiceKeys = Object.keys(ThemeMap) as themeKeys[];
