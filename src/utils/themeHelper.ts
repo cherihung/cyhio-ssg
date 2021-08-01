@@ -1,11 +1,8 @@
-import {ThemeMap} from "./constants";
-
-const LOCAL_STORAGE_KEY = "cyh_theme";
-type themeKeys = keyof typeof ThemeMap;
+import {LOCAL_STORAGE_KEY, themeKeys, ThemeMap} from "./constants";
 
 export const getUserTheme = () => {
   const savedKey = localStorage.getItem(LOCAL_STORAGE_KEY) as themeKeys;
-  const userTheme = getThemeObject(savedKey);
+  const userTheme = ThemeMap[savedKey];
 
   if (!userTheme) {
     clearUserThemeKey();
@@ -22,6 +19,6 @@ export const clearUserThemeKey = () => {
   localStorage.removeItem(LOCAL_STORAGE_KEY);
 };
 
-export const getThemeObject = (key: themeKeys) => {
-  return ThemeMap[key];
+export const getThemeName = (key: themeKeys) => {
+  return ThemeMap[key].displayName;
 };
