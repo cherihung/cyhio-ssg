@@ -1,0 +1,11 @@
+// e.g. --cyh-color: value;
+@mixin createCssProps($css_props, $prefix: cyh) {
+  @each $name, $value in $css_props {
+    --#{$prefix}-#{$name}: #{$value};
+  }
+}
+
+// e.g. color: var(--cyh-color);
+@function getCssVar($name, $prefix: cyh) {
+  @return var(--#{$prefix}-#{$name});
+}

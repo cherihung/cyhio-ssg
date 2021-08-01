@@ -1,7 +1,9 @@
+@import "./mixin";
+
 $monokai-backgroundColor: #272821;
 $monokai-color: #ddccba;
-$monokai-emphasisTextColor: #9CD32E;
-$monokai-emphasisLabelColor: #EF296E;
+$monokai-emphasisTextColor: #9cd32e;
+$monokai-emphasisLabelColor: #ef296e;
 $monokai-lightTextColor: #b2a495;
 $monokai-dividerColor: #b2a495;
 $monokai-successColor: #006400;
@@ -9,8 +11,8 @@ $monokai-alertColor: #800000;
 
 $dark-backgroundColor: #060914;
 $dark-color: #e2e2e2;
-$dark-emphasisTextColor: #A9BFCC;
-$dark-emphasisLabelColor: #636363;
+$dark-emphasisTextColor: #8beafc;
+$dark-emphasisLabelColor: #bc94f9;
 $dark-lightTextColor: #a0a0a0;
 $dark-dividerColor: #a0a0a0;
 $dark-successColor: #006400;
@@ -25,12 +27,72 @@ $bright-dividerColor: #706d6d;
 $bright-successColor: #8fbc8f;
 $bright-alertColor: #fa8072;
 
-$solarized-backgroundColor: #FDF6E3;
-$solarized-color: #586D75;
-$solarized-emphasisTextColor: #D33681;
-$solarized-emphasisLabelColor: #5FB2A7;
+$solarized-backgroundColor: #fdf6e3;
+$solarized-color: #586d75;
+$solarized-emphasisTextColor: #d33681;
+$solarized-emphasisLabelColor: #5fb2a7;
 $solarized-lightTextColor: #7b95a0;
-$solarized-dividerColor: #B8BFB8;
+$solarized-dividerColor: #b8bfb8;
 $solarized-successColor: #8fbc8f;
 $solarized-alertColor: #fa8072;
 
+:root,
+:root.monokai {
+  @include createCssProps(
+    (
+      backgroundColor: $monokai-backgroundColor,
+      color: $monokai-color,
+      emphasisTextColor: $monokai-emphasisTextColor,
+      emphasisLabelColor: $monokai-emphasisLabelColor,
+      lightTextColor: $monokai-lightTextColor,
+      dividerColor: $monokai-dividerColor,
+      successColor: $monokai-successColor,
+      alertColor: $monokai-alertColor,
+    )
+  );
+}
+
+:root.dark {
+  @include createCssProps(
+    (
+      backgroundColor: $dark-backgroundColor,
+      color: $dark-color,
+      emphasisTextColor: $dark-emphasisTextColor,
+      emphasisLabelColor: $dark-emphasisLabelColor,
+      lightTextColor: $dark-lightTextColor,
+      dividerColor: $dark-dividerColor,
+      successColor: $dark-successColor,
+      alertColor: $dark-alertColor,
+    )
+  );
+}
+
+:root.bright {
+  @include createCssProps(
+    (
+      backgroundColor: $bright-backgroundColor,
+      color: $bright-color,
+      emphasisTextColor: $bright-emphasisTextColor,
+      emphasisLabelColor: $bright-emphasisLabelColor,
+      lightTextColor: $bright-lightTextColor,
+      dividerColor: $bright-dividerColor,
+      successColor: $bright-successColor,
+      alertColor: $bright-alertColor,
+    )
+  );
+}
+
+:root.solarized {
+  @include createCssProps(
+    (
+      backgroundColor: $solarized-backgroundColor,
+      color: $solarized-color,
+      emphasisTextColor: $solarized-emphasisTextColor,
+      emphasisLabelColor: $solarized-emphasisLabelColor,
+      lightTextColor: $solarized-lightTextColor,
+      dividerColor: $solarized-dividerColor,
+      successColor: $solarized-successColor,
+      alertColor: $solarized-alertColor,
+    )
+  );
+}
