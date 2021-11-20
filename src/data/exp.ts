@@ -11,16 +11,34 @@ const experience: experienceItem[] = [
   {
     id: "cap1",
     company: "Capital One",
-    title: "Tech Lead, Senior Manager",
-    dates: "OCT 2017 - PRESENT",
-    location: "New York City & Vienna, VA",
+    title: "Senior Manager - Tech Lead, Shopping",
+    dates: "JUL 2021 - PRESENT",
+    location: "New York City",
     description:
-      "Design and deliver reliable, resilient, and scalable software for customers and internal teams Capital One Shopping. Provide tech leadership to full-stack feature team on large-scale NodeJS/React application and event-based services. Mentor and manage junior engineers.",
+      "Design and deliver reliable, resilient, and scalable software for customers and internal teams Capital One Shopping. Provide tech leadership to full-stack feature team on large-scale NodeJS/React application and event-based services. Mentor and manage a team of engineers.",
+  },
+  {
+    id: "cap2",
+    company: "Capital One",
+    title: "Master Software Engineer - Tech Lead, Shopping",
+    dates: "JAN 2019 - JUL 2021",
+    location: "New York City",
+    description:
+      "Full-stack engineering for Capital One Shopping, delivering reliable, resilient software and tooling for customers and internal teams. Special projects include exploration into GraphQL/Apollo with React, large-scale NodeJS and event-based architecture.",
+  },
+  {
+    id: "cap3",
+    company: "Capital One",
+    title: "Master Software Engineer - Tech Lead, Commercial Card",
+    dates: "OCT 2017 - JAN 2019",
+    location: "Vienna, VA",
+    description:
+      "Focused on UI engineering efforts in Capital One's Commercial Card and leading a team of front-end and back-end software engineers to deliver products and features. Mentoring and managing performances of junior engineers.",
   },
   {
     id: "aviture",
     company: "Aviture",
-    title: "Frontend Engineer",
+    title: "UI Engineer",
     dates: "MAR 2014 - OCT 2017",
     location: "Washington, DC",
     description:
