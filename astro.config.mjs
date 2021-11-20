@@ -1,6 +1,4 @@
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
-
+//import svgr from "vite-plugin-react-svg";
 // @type-check enabled!
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
 // helpful tooltips, and warnings if your exported object is invalid.
@@ -15,4 +13,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     sitemap: true, // Generate sitemap (set to "false" to disable)
   },
   dist: "./build", // When running `astro build`, path to final static output
+  vite: {
+    plugins: [],
+  },
 });
