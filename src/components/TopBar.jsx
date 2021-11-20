@@ -1,7 +1,7 @@
-import GithubLogo from "../images/github.svg";
-import LinkedInLogo from "../images/linkedin.svg";
-import MediumLogo from "../images/medium.svg";
-import TwitterLogo from "../images/twitter.svg";
+import GithubLogo from "/images/github.svg";
+import LinkedInLogo from "/images/linkedin.svg";
+import MediumLogo from "/images/medium.svg";
+import TwitterLogo from "/images/twitter.svg";
 import ThemeToggle from "./ThemeToggle";
 
 export default function TopBar() {
