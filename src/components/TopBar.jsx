@@ -1,13 +1,13 @@
-import GithubLogo from "../images/github.svg";
-import LinkedInLogo from "../images/linkedin.svg";
-import MediumLogo from "../images/medium.svg";
-import TwitterLogo from "../images/twitter.svg";
+// import GithubLogo from "../images/github.svg";
+// import LinkedInLogo from "../images/linkedin.svg";
+// import MediumLogo from "../images/medium.svg";
+// import TwitterLogo from "../images/twitter.svg";
 import ThemeToggle from "./ThemeToggle";
 
 export default function TopBar() {
   return (
     <div className='topBar'>
-      <div className='logoGroup'>
+      {/* <div className='logoGroup'>
         <div className='siteMark'>
           <strong>cyh.io</strong>
         </div>
@@ -43,7 +43,7 @@ export default function TopBar() {
         >
           <MediumLogo width='24' />
         </a>
-      </div>
+      </div> */}
       <div className='choiceGroup'>
         <ThemeToggle />
       </div>
