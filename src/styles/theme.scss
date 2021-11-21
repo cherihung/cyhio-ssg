@@ -49,6 +49,7 @@ $solarized-alertColor: #fa8072;
       dividerColor: $monokai-dividerColor,
       successColor: $monokai-successColor,
       alertColor: $monokai-alertColor,
+      headerColor: darken($monokai-backgroundColor, 10%),
     )
   );
 }
@@ -65,6 +66,7 @@ $solarized-alertColor: #fa8072;
       dividerColor: $dark-dividerColor,
       successColor: $dark-successColor,
       alertColor: $dark-alertColor,
+      headerColor: darken($dark-backgroundColor, 10%),
     )
   );
 }
@@ -73,7 +75,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $bright-backgroundColor,
-      inverseBackGroundColor: invert($bright-backgroundColor),
+      inverseBackGroundColor: invert($dark-backgroundColor),
       color: $bright-color,
       emphasisTextColor: $bright-emphasisTextColor,
       emphasisLabelColor: $bright-emphasisLabelColor,
@@ -81,6 +83,7 @@ $solarized-alertColor: #fa8072;
       dividerColor: $bright-dividerColor,
       successColor: $bright-successColor,
       alertColor: $bright-alertColor,
+      headerColor: darken($bright-backgroundColor, 80%),
     )
   );
 }
@@ -89,7 +92,7 @@ $solarized-alertColor: #fa8072;
   @include createCssProps(
     (
       backgroundColor: $solarized-backgroundColor,
-      inverseBackGroundColor: invert($solarized-backgroundColor),
+      inverseBackGroundColor: invert($dark-backgroundColor),
       color: $solarized-color,
       emphasisTextColor: $solarized-emphasisTextColor,
       emphasisLabelColor: $solarized-emphasisLabelColor,
@@ -97,6 +100,7 @@ $solarized-alertColor: #fa8072;
       dividerColor: $solarized-dividerColor,
       successColor: $solarized-successColor,
       alertColor: $solarized-alertColor,
+      headerColor: darken($solarized-backgroundColor, 80%),
     )
   );
 }
