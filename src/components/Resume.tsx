@@ -23,7 +23,7 @@ export default function Resume() {
     <div className="resume">
       <div className="section">
         <h4>Skills</h4>
-        <p>Javascript/Typescript, React, NodeJS, GraphQL, Kafka, AWS, Jenkins, Docker, Cassandra, SQL, ElasticSearch, Angular, AngularJS, CSS-in-JS, CSS3, SASS, Selenium, WebdriverIO</p>
+        <p>Javascript/Typescript, React, NodeJS, GraphQL, Kafka, AWS, Jenkins, Docker, Cassandra, SQL, ElasticSearch, Angular, CSS-in-JS, CSS3, SASS, Selenium, WebdriverIO</p>
       </div>
       <div className="section">
         <h4>Related Experience</h4>
