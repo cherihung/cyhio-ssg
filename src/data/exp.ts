@@ -15,7 +15,7 @@ const experience: experienceItem[] = [
     dates: "FEB 2023 - PRESENT",
     location: "New York City",
     description:
-      "Directs the technology space behind Capital One Shopping's Price Comparison features. Provide technical and strategic leadership to full-stack teams delivering large-sclae and highly efficient customer-facing applications.",
+      "Directs the technology space behind Capital One Shopping's Price Comparison features. Provide technical and strategic leadership to full-stack teams delivering large-scale and highly efficient customer-facing applications.",
   },
   {
     id: "cap1",
@@ -24,7 +24,7 @@ const experience: experienceItem[] = [
     dates: "JUL 2021 - PRESENT",
     location: "New York City",
     description:
-      "Design and deliver reliable, resilient, and scalable software for customers and internal teams Capital One Shopping. Provide tech leadership to full-stack feature team on large-scale NodeJS/React application and event-based services. Mentor and manage a team of engineers.",
+      "Delivered reliable, resilient, and scalable software for customers and internal teams Capital One Shopping. Provide tech leadership to full-stack feature team on large-scale NodeJS/React application and event-based services. Mentor and manage a team of engineers.",
   },
   {
     id: "cap2",
@@ -42,25 +42,25 @@ const experience: experienceItem[] = [
     dates: "OCT 2017 - JAN 2019",
     location: "Vienna, VA",
     description:
-      "Focused on UI engineering efforts in Capital One's Commercial Card and leading a team of front-end and back-end software engineers to deliver products and features. Mentoring and managing performances of junior engineers.",
+      "Focused on UI engineering efforts in Capital One's Commercial Card, leading a full-stack team to developing an internal servicing application. Mentoring and managing performances of junior engineers.",
   },
   {
     id: "aviture",
     company: "Aviture",
-    title: "UI Engineer",
+    title: "Frontend Engineer",
     dates: "MAR 2014 - OCT 2017",
     location: "Washington, DC",
     description:
-      "Created  modular and shareable UI toolkit/frameworks. Designed functional prototypes and implemented applications in AngularJS, React and Backbone.",
+      "Created modular and shareable UI toolkit/frameworks for the organization. Implemented mapping applications in AngularJS, React and Backboned.",
   },
   {
     id: "edweek",
     company: "Editorial Projects in Education",
-    title: "Online Creative Director",
+    title: "Online Creative Director/Engineer",
     dates: "SEP 2010 - OCT 2014",
     location: "Bethesda, MD",
     description:
-      "Designed and implemented UI and analytics capabilities for the publication’s flagship website and mobile application. Directed and executed data visualization, multimedia and information projects.",
+      "Designed and implemented frontend features, custom analytics capabilities and content management system for the publication’s flagship website. Directed and executed data visualization, multimedia microsites and data information projects.",
   },
 ];
 
