@@ -9,10 +9,19 @@ export type experienceItem = {
 
 const experience: experienceItem[] = [
   {
+    id: "cap00",
+    company: "Capital One",
+    title: "Senior Director of Software Engineering, Shopping",
+    dates: "Aug 2025 - Present",
+    location: "New York",
+    description:
+      "Provide technical, strategic, and organizational leadership to deliver highly scalable, customer-facing applications serving millions of users. Drive the long-term architectural roadmap, collaborating with product and business leaders to align technology initiatives with key company objectives for growth and market expansion.",
+  },
+  {
     id: "cap0",
     company: "Capital One",
     title: "Director of Software Engineering, Shopping",
-    dates: "FEB 2023 - PRESENT",
+    dates: "FEB 2023 - AUG 2025",
     location: "New York City",
     description:
       "Directs the technology space behind Capital One Shopping's Price Comparison features. Provide technical and strategic leadership to full-stack teams delivering large-scale and highly efficient customer-facing applications.",

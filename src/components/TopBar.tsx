@@ -1,7 +1,6 @@
 import GithubLogo from "/images/github.svg";
 import LinkedInLogo from "/images/linkedin.svg";
 import MediumLogo from "/images/medium.svg";
-import TwitterLogo from "/images/twitter.svg";
 import ThemeToggle from "./ThemeToggle";
 
 export default function TopBar() {
@@ -18,14 +17,6 @@ export default function TopBar() {
           title='Github'
         >
           <img src={GithubLogo} width='24' />
-        </a>
-        <a
-          href='https://twitter.com/cyhung'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='Twitter'
-        >
-          <img src={TwitterLogo} width='24' />
         </a>
         <a
           href='https://linkedin.com/in/cyhung'
